@@ -1,0 +1,17 @@
+{
+    "name": "brenno/shopping-cart",
+    "description": "A simple shopping cart",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Brenno Araújo",
+            "email": "brennoaraujo@yahoo.com"
+        }
+    ],
+    "require": {}
+}
