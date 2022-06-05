@@ -2,10 +2,30 @@
 
 namespace App;
 
+use App\Item;
+
 class ShoppingCart
 {
-    public static function test()
+    private $items;
+
+    public function __construct()
     {
-        return "ShoppingCart";
+        $this->items = [];
+    }
+
+    public function getItems()
+    {
+        return $this->items;
+    }
+
+    public function addItem(Item $item)
+    {
+        array_push($this->items, $item);
+        return true;
+    }
+
+    public function validateCart(): bool
+    {
+        return count($this->items) > 0;
     }
 }
