@@ -3,3 +3,6 @@
 
 ###### Autoload
 `php ../composer.phar dumpautoload -o`
+
+###### Tests
+`vendor\bin\phpunit.bat test`
